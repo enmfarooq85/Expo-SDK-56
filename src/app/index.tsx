@@ -39,6 +39,11 @@ export default function HomeScreen() {
               <Text style={styles.buttonText}>Try Pedometer</Text>
             </Pressable>
           </Link>
+          <Link href="/battery" asChild>
+            <Pressable style={styles.button}>
+              <Text style={styles.buttonText}>See Battery Details</Text>
+            </Pressable>
+          </Link>
         </View>
       </View>
     </SafeAreaView>
