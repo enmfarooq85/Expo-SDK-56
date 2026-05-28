@@ -44,6 +44,11 @@ export default function HomeScreen() {
               <Text style={styles.buttonText}>See Battery Details</Text>
             </Pressable>
           </Link>
+          <Link href="/camera" asChild>
+            <Pressable style={styles.button}>
+              <Text style={styles.buttonText}>Open Camera</Text>
+            </Pressable>
+          </Link>
         </View>
       </View>
     </SafeAreaView>
