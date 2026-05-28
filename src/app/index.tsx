@@ -23,21 +23,23 @@ export default function HomeScreen() {
           </Text>
         </View>
 
-        <Link href="/profile" asChild>
-          <Pressable style={styles.button}>
-            <Text style={styles.buttonText}>Go To Profile</Text>
-          </Pressable>
-        </Link>
-        <Link href="/network" asChild>
-          <Pressable style={styles.button}>
-            <Text style={styles.buttonText}>See Network Details</Text>
-          </Pressable>
-        </Link>
-        <Link href="/pedometer" asChild>
-          <Pressable style={styles.button}>
-            <Text style={styles.buttonText}>Try Pedometer</Text>
-          </Pressable>
-        </Link>
+        <View style={styles.btnContainer}>
+          <Link href="/profile" asChild>
+            <Pressable style={styles.button}>
+              <Text style={styles.buttonText}>Go To Profile</Text>
+            </Pressable>
+          </Link>
+          <Link href="/network" asChild>
+            <Pressable style={styles.button}>
+              <Text style={styles.buttonText}>See Network Details</Text>
+            </Pressable>
+          </Link>
+          <Link href="/pedometer" asChild>
+            <Pressable style={styles.button}>
+              <Text style={styles.buttonText}>Try Pedometer</Text>
+            </Pressable>
+          </Link>
+        </View>
       </View>
     </SafeAreaView>
   );
@@ -91,6 +93,11 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: "#4b5563",
     lineHeight: 22,
+  },
+
+  btnContainer: {
+    display: "flex",
+    gap: 10,
   },
 
   button: {
