@@ -49,6 +49,11 @@ export default function HomeScreen() {
               <Text style={styles.buttonText}>Open Camera</Text>
             </Pressable>
           </Link>
+          <Link href="/clipboard" asChild>
+            <Pressable style={styles.button}>
+              <Text style={styles.buttonText}>See Your Clipboard</Text>
+            </Pressable>
+          </Link>
         </View>
       </View>
     </SafeAreaView>
