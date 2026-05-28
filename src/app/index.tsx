@@ -1,61 +1,68 @@
 import { Link } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
-import { View, Text, Pressable, StyleSheet } from "react-native";
+import { View, Text, Pressable, StyleSheet, ScrollView } from "react-native";
 
 export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar style="dark" />
+      <ScrollView>
+        <StatusBar style="dark" />
 
-      <View style={styles.content}>
-        <Text style={styles.heading}>Welcome Back 👋</Text>
+        <View style={styles.content}>
+          <Text style={styles.heading}>Welcome Back 👋</Text>
 
-        <Text style={styles.subHeading}>
-          Simple Expo Router UI with TypeScript safety and clean navigation.
-        </Text>
-
-        <View style={styles.card}>
-          <Text style={styles.cardTitle}>Dashboard</Text>
-
-          <Text style={styles.cardText}>
-            Build scalable mobile apps with Expo Router and React Native.
+          <Text style={styles.subHeading}>
+            Simple Expo Router UI with TypeScript safety and clean navigation.
           </Text>
-        </View>
 
-        <View style={styles.btnContainer}>
-          <Link href="/profile" asChild>
-            <Pressable style={styles.button}>
-              <Text style={styles.buttonText}>Go To Profile</Text>
-            </Pressable>
-          </Link>
-          <Link href="/network" asChild>
-            <Pressable style={styles.button}>
-              <Text style={styles.buttonText}>See Network Details</Text>
-            </Pressable>
-          </Link>
-          <Link href="/pedometer" asChild>
-            <Pressable style={styles.button}>
-              <Text style={styles.buttonText}>Try Pedometer</Text>
-            </Pressable>
-          </Link>
-          <Link href="/battery" asChild>
-            <Pressable style={styles.button}>
-              <Text style={styles.buttonText}>See Battery Details</Text>
-            </Pressable>
-          </Link>
-          <Link href="/camera" asChild>
-            <Pressable style={styles.button}>
-              <Text style={styles.buttonText}>Open Camera</Text>
-            </Pressable>
-          </Link>
-          <Link href="/clipboard" asChild>
-            <Pressable style={styles.button}>
-              <Text style={styles.buttonText}>See Your Clipboard</Text>
-            </Pressable>
-          </Link>
+          <View style={styles.card}>
+            <Text style={styles.cardTitle}>Dashboard</Text>
+
+            <Text style={styles.cardText}>
+              Build scalable mobile apps with Expo Router and React Native.
+            </Text>
+          </View>
+
+          <View style={styles.btnContainer}>
+            <Link href="/profile" asChild>
+              <Pressable style={styles.button}>
+                <Text style={styles.buttonText}>Go To Profile</Text>
+              </Pressable>
+            </Link>
+            <Link href="/network" asChild>
+              <Pressable style={styles.button}>
+                <Text style={styles.buttonText}>See Network Details</Text>
+              </Pressable>
+            </Link>
+            <Link href="/pedometer" asChild>
+              <Pressable style={styles.button}>
+                <Text style={styles.buttonText}>Try Pedometer</Text>
+              </Pressable>
+            </Link>
+            <Link href="/battery" asChild>
+              <Pressable style={styles.button}>
+                <Text style={styles.buttonText}>See Battery Details</Text>
+              </Pressable>
+            </Link>
+            <Link href="/camera" asChild>
+              <Pressable style={styles.button}>
+                <Text style={styles.buttonText}>Open Camera</Text>
+              </Pressable>
+            </Link>
+            <Link href="/clipboard" asChild>
+              <Pressable style={styles.button}>
+                <Text style={styles.buttonText}>See Your Clipboard</Text>
+              </Pressable>
+            </Link>
+            <Link href="/location" asChild>
+              <Pressable style={styles.button}>
+                <Text style={styles.buttonText}>See Your Location</Text>
+              </Pressable>
+            </Link>
+          </View>
         </View>
-      </View>
+      </ScrollView>
     </SafeAreaView>
   );
 }
