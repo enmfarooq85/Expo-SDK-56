@@ -2,6 +2,7 @@ import { Link } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
 import { View, Text, Pressable, StyleSheet, ScrollView } from "react-native";
+import BasicBottomSheetExample from "@/components/bottom-sheet";
 
 export default function HomeScreen() {
   return (
@@ -62,6 +63,7 @@ export default function HomeScreen() {
             </Link>
           </View>
         </View>
+        <BasicBottomSheetExample />
       </ScrollView>
     </SafeAreaView>
   );
